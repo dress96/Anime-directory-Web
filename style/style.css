@@ -17,17 +17,20 @@
     --link-footer-hover-color: hsl(354, 91%, 22%);
     --lateral-menu-background-color:  hsl(0, 0%, 9%);
     --lateral-menu-text-color: hsl(0, 0%, 100%);
+    --lateral-menu-title-color: hsl(0, 0%, 67%);
+    --lateral-menu-border-color:hsl(0, 0%, 67%);
     --link-menu-icon-color:hsl(0, 0%, 100%);
     --link-menu-text-color: hsl(354, 93%, 37%);
     --link-menu-hover: hsl(0deg 0% 22%);
     --box-shadow-color: hsl(0deg 100% 51%);
     --main-title-h1-color:hsl(0, 0%, 100%);
-    --new-anime-color-info: hsl(125, 100%, 20%);
+    --new-anime-color-info: hsl(125deg 71% 32%);
     --anime-info-color:hsl(0, 0%, 100%);
 }
 
 html, body {
     background: url("../images/bg.jpg") #fff;
+    font-family: open sans,sans-serif;
     scroll-behavior: smooth;
     overflow-x:hidden;
 }
@@ -142,7 +145,7 @@ html, body {
 
 .lateral-menu {
     width: 20%;
-    padding-top:50px;
+    padding-top:12px;
     background-color:var(--lateral-menu-background-color);
     color: var(--lateral-menu-text-color);
     -webkit-box-shadow: 0 0 19px 10px var(--box-shadow-color),0 0 3px 2px var(--box-shadow-color);
@@ -154,8 +157,7 @@ html, body {
     padding: 15px 40px;
     text-decoration: none;
     color: var(--link-menu-text-color);
-    font-family: 'Roboto', sans-serif;
-    font-size:1.2em;
+    font-size:1.1em;
     font-weight: 400;
 }
 
@@ -165,8 +167,29 @@ html, body {
 
 .menu-icon {
     margin-right: 12px;
-    font-size:1.3em;
+    font-size:1.1em;
     color: var(--link-menu-icon-color);
+}
+
+.section-menu {
+    margin-bottom:12px;
+    margin-right:8px;
+    padding-bottom:12px;
+    border-bottom: 1px solid var(--lateral-menu-border-color);
+}
+
+.section-menu:last-child {
+    border-bottom:none;
+}
+
+.section-menu h3 {
+    display: block;
+    padding-top:12px;
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: var(--lateral-menu-title-color);
 }
 
 .principal-section {
@@ -206,14 +229,14 @@ html, body {
 }
 
 .center-footer h1 {
-    font-size:1.3em;
+    font-size:1.2em;
     font-weight: 800;
     margin-bottom:12px;
 }
 
 .center-footer a {
     text-decoration: none;
-    font-size:1em;
+    font-size:0.8em;
     color: var(--link-footer-color);
 }
 
@@ -250,7 +273,7 @@ html, body {
     border-top: 1px solid var(--copyright-border-top-color);
     color: var(--copyright-text-color);
     text-align: center;
-    font-size:0.9em;
+    font-size:0.7em;
 }
 
 .copyright a {
@@ -274,6 +297,7 @@ html, body {
 .list-anime-option:hover {
     transition: 0.2s ease;
     transform: scale(1.08);
+    opacity: 0.7;
 }
 
 .list-anime-option:not(:hover) {
@@ -282,7 +306,6 @@ html, body {
 }
 
 .anime-list img {
-    width: 180px;
     height: 230px;
     border-radius:5px;
     clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
@@ -301,25 +324,23 @@ html, body {
 .new-anime-info {
     position: absolute;
     right: 0;
-    margin-right:12px;
-    width: 30px;
-    height:35px;
+    margin: 5px 12px;
+    padding: 0 12px;
     z-index:1500;
     background-color: var(--new-anime-color-info);
-}
-
-.new-anime-icon {
-    width: 12px;
-    height: 12px;
-    background-image: url("../images/new.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    border-radius: 32px;
+    line-height: 16px;
+    font-size: 0.8em;
+    font-weight: 600;
 }
 
 .anime-info {
     position: relative;
     bottom:25px;
     margin-left:12px;
+    font-family: open sans,sans-serif;
+    font-size:0.8em;
+    font-weight:800;
 }
 
 @media (max-width: 1300px) {
@@ -335,6 +356,10 @@ html, body {
         font-size:0.8em;
         text-align: center;
         padding: 15px 25px;
+    }
+
+    .section-menu h3 {
+        font-size:0.8em;
     }
 
     .menu-icon {
