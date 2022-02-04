@@ -132,7 +132,6 @@ html, body {
 .main-page {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
     color: #fff;
 }
 
@@ -145,7 +144,7 @@ html, body {
 
 .lateral-menu {
     width: 20%;
-    padding-top:12px;
+    padding-top:21px;
     background-color:var(--lateral-menu-background-color);
     color: var(--lateral-menu-text-color);
     -webkit-box-shadow: 0 0 19px 10px var(--box-shadow-color),0 0 3px 2px var(--box-shadow-color);
@@ -154,7 +153,7 @@ html, body {
 
 .lateral-menu a {
     display:block;
-    padding: 15px 40px;
+    padding: 15px 30px;
     text-decoration: none;
     color: var(--link-menu-text-color);
     font-size:1.1em;
@@ -184,7 +183,7 @@ html, body {
 
 .section-menu h3 {
     display: block;
-    padding-top:12px;
+    padding:12px;
     text-align: center;
     text-transform:uppercase;
     letter-spacing: 0.5px;
@@ -198,6 +197,7 @@ html, body {
 }
 
 .footer-page {
+    position: sticky;
     width: 100%;
     min-height: 22vh;
     background-color:var(--header-footer-background-color);
