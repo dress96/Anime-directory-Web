@@ -155,7 +155,7 @@ html, body {
     padding: 15px 30px;
     text-decoration: none;
     color: var(--link-menu-text-color);
-    font-size:1.1em;
+    font-size:0.9em;
     font-weight: 400;
 }
 
@@ -171,7 +171,7 @@ html, body {
 
 .section-menu {
     margin-bottom:12px;
-    margin-right:8px;
+    margin-right:10px;
     padding-bottom:12px;
     border-bottom: 1px solid var(--lateral-menu-border-color);
 }
@@ -187,6 +187,7 @@ html, body {
     text-transform:uppercase;
     letter-spacing: 0.5px;
     font-weight: 400;
+    font-size:0.9em;
     color: var(--lateral-menu-title-color);
 }
 
@@ -240,7 +241,7 @@ html, body {
 }
 
 .right-footer, .left-footer {
-    margin: 0 15vh;
+    margin: 0 5vw;
 }
 
 .social-medias {
@@ -374,6 +375,10 @@ html, body {
 }
 
 @media (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .lateral-menu {
         display:none;
     }
