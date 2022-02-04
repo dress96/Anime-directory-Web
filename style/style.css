@@ -1,5 +1,5 @@
 :root {
-    --header-footer-background-color: hsla(0, 0%, 13%, 0.98);
+    --header-footer-background-color: hsl(0, 0%, 13%);
     --header-footer-text-color: hsl(0, 0%, 100%);
     --input-color: hsl(0, 0%, 7%);
     --input-border-color: hsl(0, 0%, 18.82%);
@@ -32,7 +32,6 @@ html, body {
     background: url("../images/bg.jpg") #fff;
     font-family: open sans,sans-serif;
     scroll-behavior: smooth;
-    overflow-x:hidden;
 }
 
 .btn {
