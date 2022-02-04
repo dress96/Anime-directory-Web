@@ -23,12 +23,15 @@
     --link-menu-text-color: hsl(354, 93%, 37%);
     --link-menu-hover: hsl(0deg 0% 22%);
     --box-shadow-color: hsl(0deg 100% 51%);
+    --main-page-text-color: hsl(0, 0%, 100%);
     --main-title-h1-color:hsl(0, 0%, 100%);
     --new-anime-color-info: hsl(125deg 71% 32%);
     --anime-info-color:hsl(0, 0%, 100%);
     --border-color-pagination: hsl(0, 0%, 100%);
     --pagination-color-text:hsl(0, 0%, 100%);
     --pagination-color-hover:hsl(354, 91%, 22%);
+    --size-guide-icon: 25px;
+    --social-media-size: 35px;
 }
 
 html, body {
@@ -75,8 +78,8 @@ html, body {
 }
 
 .guide-icon {
-    width: 25px;
-    height: 25px;
+    width: var(--size-guide-icon);
+    height: var(--size-guide-icon);
     margin-right:30px;
     background-image: url('/images/icon-menu.svg');
     background-repeat: no-repeat;
@@ -134,7 +137,7 @@ html, body {
 .main-page {
     display: flex;
     flex-direction: row;
-    color: #fff;
+    color: var(--main-page-text-color);
 }
 
 .title-page {
@@ -257,14 +260,14 @@ html, body {
 
 .social-medias a {
     display:block;
-    width: 4vh;
-    height: 4vh;
-    border-radius:20px;
+    width: var(--social-media-size);
+    height: var(--social-media-size);
+    line-height: var(--social-media-size);
     background-color: var(--social-media-background);
     color: var(--social-media-text);
-    font-size:2vh;
+    border-radius:20px;
+    font-size:1.2em;
     text-align: center;
-    line-height: 4vh;
 }
 
 .copyright {
@@ -367,6 +370,9 @@ html, body {
 
 .pagination a:hover {
     background-color: var(--pagination-color-hover);
+    -webkit-transition: background 250ms;
+    -moz-transition: background 250ms; 
+    -o-transition: background 250ms;  
     transition: background 250ms;
 }
 
