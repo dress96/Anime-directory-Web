@@ -26,6 +26,9 @@
     --main-title-h1-color:hsl(0, 0%, 100%);
     --new-anime-color-info: hsl(125deg 71% 32%);
     --anime-info-color:hsl(0, 0%, 100%);
+    --border-color-pagination: hsl(0, 0%, 100%);
+    --pagination-color-text:hsl(0, 0%, 100%);
+    --pagination-color-hover:hsl(354, 91%, 22%);
 }
 
 html, body {
@@ -343,6 +346,30 @@ html, body {
     font-weight:800;
 }
 
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    display:inline-block;
+    min-width: 38px;
+    height: 38px;
+    margin: 0 3px 6px;
+    text-decoration: none;
+    border: 2px solid var(--border-color-pagination);
+    border-radius: 38px;
+    font-size:1em;
+    font-weight: 800;
+    color: var(--pagination-color-text);
+    line-height: 38px;
+    letter-spacing: 0.03em;
+}
+
+.pagination a:hover {
+    background-color: var(--pagination-color-hover);
+    transition: background 250ms;
+}
+
 @media (max-width: 1300px) {
 
     .lateral-menu {
@@ -381,6 +408,10 @@ html, body {
 
     .lateral-menu {
         display:none;
+    }
+
+    .anime-list {
+        justify-content: center;
     }
 
     .footer-information {
