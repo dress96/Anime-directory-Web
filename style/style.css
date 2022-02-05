@@ -33,6 +33,8 @@
     --window-box-color: hsl(0, 0%, 0%);
     --window-box-border-color: hsl(0, 0%, 100%);
     --window-box-text-color:hsl(0, 0%, 100%);
+    --window-input-color:hsl(0, 0%, 100%);
+    --window-input-color-focus: hsl(354, 91%, 22%);
     --size-guide-icon: 25px;
     --social-media-size: 35px;
 }
@@ -391,16 +393,82 @@ html, body {
 }
 
 .window-box {
-    min-width:35vh;
-    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
     border-radius: 12px;
     padding:30px;
     border: 3px solid var(--window-box-border-color);
     background-color:var(--window-box-color);
     color:var(--window-box-text-color);
 }
+
+.window-box label {
+    margin-bottom:32px;
+    font-size:0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.window-box input {
+    display: block;
+    outline: none;
+    border:none;
+    width: 100%;
+    height:25px;
+    margin-top:12px;
+    margin-bottom:21px;
+    padding-left: 8px;
+    background: none;
+    border-bottom: 2px solid var(--window-input-color);
+    color: var(--window-input-color);
+    font-size:1.2em;
+}
+
+.window-box input:focus {
+    border-bottom: 2px solid var(--window-input-color-focus);
+}
+
+.window-btn {
+    width: 100%;
+    height: 45px;
+    margin-top:12px;
+    border-radius: 12px;
+    background-color: var(--btn-login-background-color);
+    color: var(--btn-login-text-color);
+    font-weight: 800;
+    font-size:1em;
+}
+
+.window-box a {
+    text-decoration: none;
+    color: var(--link-footer-color);
+}
+
+.window-box a:hover {
+    color: var(--link-footer-hover-color);
+}
+
 .window-box h3  {
-    font-size:1.4em;
+    margin-bottom:21px;
+    text-align: center;
+    font-size:1.8em;
+}
+
+.login-form {
+    width: 20vw;
+    min-width: 250px;
+}
+
+.remember-password {
+    display: block;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.register-info {
+    padding-top:12px;
+    text-align: center;
+    font-size:0.8em;
 }
 
 @media (max-width: 1300px) {
