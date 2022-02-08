@@ -209,7 +209,8 @@ html, body {
 }
 
 .footer-page {
-    position: sticky;
+    position: absolute;
+    left:0;
     width: 100%;
     background-color:var(--header-footer-background-color);
     color: var(--header-footer-text-color);
@@ -337,7 +338,7 @@ html, body {
     right: 0;
     margin: 5px 12px;
     padding: 0 12px;
-    z-index:1500;
+    z-index:1;
     background-color: var(--new-anime-color-info);
     border-radius: 32px;
     line-height: 16px;
@@ -487,7 +488,7 @@ html, body {
     }
 
     .section-menu h3 {
-        font-size:0.8em;
+        font-size:0.7em;
     }
 
     .menu-icon {
