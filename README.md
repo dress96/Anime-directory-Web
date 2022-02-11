@@ -1,4 +1,4 @@
-# Anime directory web
+# Anime directory web template
 
 It's a basic html/css template to create a basic anime directory or you can modify to do another type directory for example, film directory, series directory or game directory.
 
